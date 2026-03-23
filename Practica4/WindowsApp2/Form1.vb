@@ -1,5 +1,7 @@
 ﻿Public Class Form1
     Dim formato As Boolean = True
+    Dim boton_start As Boolean = False
+    Dim tiempo_crono As Integer = 0
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
@@ -107,5 +109,31 @@
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub Start_Click(sender As Object, e As EventArgs) Handles Start.Click
+        If boton_start = False Then
+            Timer3.Enabled = True
+            boton_start = True
+            Start.Text = "Stop"
+        ElseIf boton_start = True Then
+            Timer3.Enabled = False
+            boton_start = False
+            Start.Text = "Start"
+        End If
+    End Sub
+
+    Private Sub Reset_Click(sender As Object, e As EventArgs) Handles Reset.Click
+        tiempo_crono = 0
+        Timer3.Enabled = False
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        tiempo_crono = tiempo_crono + 1
+        tiempo.text = tiempo_crono.ToString
     End Sub
 End Class
