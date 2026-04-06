@@ -1,0 +1,12 @@
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+C:\Diego Martínez 24535\Practica4\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb

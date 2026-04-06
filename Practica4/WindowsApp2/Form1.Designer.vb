@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Hora = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Minutos = New System.Windows.Forms.Label()
@@ -39,15 +40,17 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Segundos = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.tiempo = New System.Windows.Forms.Label()
-        Me.Start = New System.Windows.Forms.Button()
         Me.Reset = New System.Windows.Forms.Button()
+        Me.Start = New System.Windows.Forms.Button()
+        Me.tiempo = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Hora
@@ -120,7 +123,7 @@ Partial Class Form1
         'Configuracion
         '
         Me.Configuracion.Image = Global.WindowsApp2.My.Resources.Resources.Adobe_Express___file_Photoroom
-        Me.Configuracion.Location = New System.Drawing.Point(169, 334)
+        Me.Configuracion.Location = New System.Drawing.Point(145, 334)
         Me.Configuracion.Name = "Configuracion"
         Me.Configuracion.Size = New System.Drawing.Size(37, 38)
         Me.Configuracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -206,39 +209,10 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Start)
         Me.Panel2.Controls.Add(Me.tiempo)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Location = New System.Drawing.Point(103, 148)
+        Me.Panel2.Location = New System.Drawing.Point(130, 102)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(175, 180)
         Me.Panel2.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(35, 6)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 22)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Cronómetro"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tiempo
-        '
-        Me.tiempo.AutoSize = True
-        Me.tiempo.Location = New System.Drawing.Point(12, 43)
-        Me.tiempo.Name = "tiempo"
-        Me.tiempo.Size = New System.Drawing.Size(39, 13)
-        Me.tiempo.TabIndex = 1
-        Me.tiempo.Text = "Label5"
-        '
-        'Start
-        '
-        Me.Start.Location = New System.Drawing.Point(24, 110)
-        Me.Start.Name = "Start"
-        Me.Start.Size = New System.Drawing.Size(52, 24)
-        Me.Start.TabIndex = 2
-        Me.Start.Text = "Start"
-        Me.Start.UseVisualStyleBackColor = True
         '
         'Reset
         '
@@ -249,8 +223,48 @@ Partial Class Form1
         Me.Reset.Text = "Button3"
         Me.Reset.UseVisualStyleBackColor = True
         '
+        'Start
+        '
+        Me.Start.Location = New System.Drawing.Point(24, 110)
+        Me.Start.Name = "Start"
+        Me.Start.Size = New System.Drawing.Size(52, 24)
+        Me.Start.TabIndex = 2
+        Me.Start.Text = "Start"
+        Me.Start.UseVisualStyleBackColor = True
+        '
+        'tiempo
+        '
+        Me.tiempo.AutoSize = True
+        Me.tiempo.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tiempo.Location = New System.Drawing.Point(14, 55)
+        Me.tiempo.Name = "tiempo"
+        Me.tiempo.Size = New System.Drawing.Size(158, 31)
+        Me.tiempo.TabIndex = 1
+        Me.tiempo.Text = "00:00:00.00"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(37, 21)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(111, 22)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Cronómetro"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'Timer3
         '
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(191, 334)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(38, 38)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
         '
         'Form1
         '
@@ -261,6 +275,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Segundos)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Configuracion)
         Me.Controls.Add(Me.Fecha)
         Me.Controls.Add(Me.Dias)
@@ -276,6 +291,7 @@ Partial Class Form1
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -302,4 +318,5 @@ Partial Class Form1
     Friend WithEvents Reset As Button
     Friend WithEvents Start As Button
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
