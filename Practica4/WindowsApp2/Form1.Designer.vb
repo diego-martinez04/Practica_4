@@ -31,8 +31,6 @@ Partial Class Form1
         Me.Fecha = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Configuracion = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -45,12 +43,20 @@ Partial Class Form1
         Me.tiempo = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Configuracion = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Hora
@@ -120,32 +126,12 @@ Partial Class Form1
         '
         Me.Timer2.Interval = 1000
         '
-        'Configuracion
-        '
-        Me.Configuracion.Image = Global.WindowsApp2.My.Resources.Resources.Adobe_Express___file_Photoroom
-        Me.Configuracion.Location = New System.Drawing.Point(145, 334)
-        Me.Configuracion.Name = "Configuracion"
-        Me.Configuracion.Size = New System.Drawing.Size(37, 38)
-        Me.Configuracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Configuracion.TabIndex = 6
-        Me.Configuracion.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources.shopping
-        Me.PictureBox1.Location = New System.Drawing.Point(1, -49)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(374, 579)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
-        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(103, 148)
+        Me.Panel1.Location = New System.Drawing.Point(96, 110)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(175, 180)
         Me.Panel1.TabIndex = 7
@@ -209,7 +195,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Start)
         Me.Panel2.Controls.Add(Me.tiempo)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Location = New System.Drawing.Point(130, 102)
+        Me.Panel2.Location = New System.Drawing.Point(96, 107)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(175, 180)
         Me.Panel2.TabIndex = 3
@@ -220,7 +206,7 @@ Partial Class Form1
         Me.Reset.Name = "Reset"
         Me.Reset.Size = New System.Drawing.Size(56, 24)
         Me.Reset.TabIndex = 3
-        Me.Reset.Text = "Button3"
+        Me.Reset.Text = "Reset"
         Me.Reset.UseVisualStyleBackColor = True
         '
         'Start
@@ -256,21 +242,83 @@ Partial Class Form1
         'Timer3
         '
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.WindowsApp2.My.Resources.Resources.hourglass_white_icon_vector
+        Me.PictureBox3.Location = New System.Drawing.Point(225, 334)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(36, 36)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 10
+        Me.PictureBox3.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(191, 334)
+        Me.PictureBox2.Location = New System.Drawing.Point(181, 332)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(38, 38)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
         '
+        'Configuracion
+        '
+        Me.Configuracion.Image = Global.WindowsApp2.My.Resources.Resources.Adobe_Express___file_Photoroom
+        Me.Configuracion.Location = New System.Drawing.Point(130, 332)
+        Me.Configuracion.Name = "Configuracion"
+        Me.Configuracion.Size = New System.Drawing.Size(37, 38)
+        Me.Configuracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Configuracion.TabIndex = 6
+        Me.Configuracion.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources.shopping
+        Me.PictureBox1.Location = New System.Drawing.Point(1, -49)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(374, 579)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Location = New System.Drawing.Point(111, 61)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(175, 180)
+        Me.Panel3.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(43, 67)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(82, 31)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "00:00"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(24, 24)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(126, 22)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Temporizador"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(356, 444)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Segundos)
@@ -285,13 +333,16 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -319,4 +370,8 @@ Partial Class Form1
     Friend WithEvents Start As Button
     Friend WithEvents Timer3 As Timer
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class

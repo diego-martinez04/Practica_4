@@ -131,5 +131,8 @@
   <ItemGroup>
     <None Include="Resources\Adobe Express - file-Photoroom.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hourglass-white-icon-vector.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
