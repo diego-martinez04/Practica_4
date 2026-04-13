@@ -32,6 +32,11 @@ WindowsApp2
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:WindowsApp2.My.Resources.Resources.hourglass_white_icon_vector">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:WindowsApp2.My.Resources.Resources.image">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

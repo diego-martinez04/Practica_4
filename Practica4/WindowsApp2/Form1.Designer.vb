@@ -47,27 +47,32 @@ Partial Class Form1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Configuracion = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Temporizador = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
+        Me.Temporizador.SuspendLayout()
         Me.SuspendLayout()
         '
         'Hora
         '
         Me.Hora.AutoSize = True
         Me.Hora.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Hora.Font = New System.Drawing.Font("Montserrat", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Hora.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Hora.ForeColor = System.Drawing.SystemColors.Control
         Me.Hora.Location = New System.Drawing.Point(58, 169)
         Me.Hora.Name = "Hora"
-        Me.Hora.Size = New System.Drawing.Size(78, 55)
+        Me.Hora.Size = New System.Drawing.Size(66, 46)
         Me.Hora.TabIndex = 0
         Me.Hora.Text = "00"
         '
@@ -75,11 +80,11 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Font = New System.Drawing.Font("Montserrat", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
         Me.Label2.Location = New System.Drawing.Point(120, 169)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 55)
+        Me.Label2.Size = New System.Drawing.Size(32, 46)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = ":"
         '
@@ -87,11 +92,11 @@ Partial Class Form1
         '
         Me.Minutos.AutoSize = True
         Me.Minutos.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Minutos.Font = New System.Drawing.Font("Montserrat", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Minutos.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Minutos.ForeColor = System.Drawing.SystemColors.Control
         Me.Minutos.Location = New System.Drawing.Point(142, 169)
         Me.Minutos.Name = "Minutos"
-        Me.Minutos.Size = New System.Drawing.Size(78, 55)
+        Me.Minutos.Size = New System.Drawing.Size(66, 46)
         Me.Minutos.TabIndex = 2
         Me.Minutos.Text = "00"
         '
@@ -99,11 +104,11 @@ Partial Class Form1
         '
         Me.Dias.AutoSize = True
         Me.Dias.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Dias.Font = New System.Drawing.Font("Montserrat", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dias.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Dias.ForeColor = System.Drawing.SystemColors.Control
         Me.Dias.Location = New System.Drawing.Point(122, 227)
         Me.Dias.Name = "Dias"
-        Me.Dias.Size = New System.Drawing.Size(130, 48)
+        Me.Dias.Size = New System.Drawing.Size(116, 39)
         Me.Dias.TabIndex = 3
         Me.Dias.Text = "Lunes"
         '
@@ -111,11 +116,11 @@ Partial Class Form1
         '
         Me.Fecha.AutoSize = True
         Me.Fecha.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Fecha.Font = New System.Drawing.Font("Montserrat", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Fecha.ForeColor = System.Drawing.SystemColors.Control
         Me.Fecha.Location = New System.Drawing.Point(63, 285)
         Me.Fecha.Name = "Fecha"
-        Me.Fecha.Size = New System.Drawing.Size(246, 29)
+        Me.Fecha.Size = New System.Drawing.Size(240, 25)
         Me.Fecha.TabIndex = 4
         Me.Fecha.Text = "09 de marzo del 2026"
         '
@@ -158,10 +163,10 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Montserrat", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(36, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 15)
+        Me.Label1.Size = New System.Drawing.Size(98, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Configuraciones"
         '
@@ -169,11 +174,11 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Font = New System.Drawing.Font("Montserrat", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.Control
         Me.Label3.Location = New System.Drawing.Point(208, 169)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(34, 55)
+        Me.Label3.Size = New System.Drawing.Size(32, 46)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = ":"
         '
@@ -181,11 +186,11 @@ Partial Class Form1
         '
         Me.Segundos.AutoSize = True
         Me.Segundos.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Segundos.Font = New System.Drawing.Font("Montserrat", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Segundos.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Segundos.ForeColor = System.Drawing.SystemColors.Control
         Me.Segundos.Location = New System.Drawing.Point(231, 169)
         Me.Segundos.Name = "Segundos"
-        Me.Segundos.Size = New System.Drawing.Size(78, 55)
+        Me.Segundos.Size = New System.Drawing.Size(66, 46)
         Me.Segundos.TabIndex = 9
         Me.Segundos.Text = "00"
         '
@@ -231,10 +236,10 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(37, 21)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 22)
+        Me.Label4.Size = New System.Drawing.Size(103, 20)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Cronómetro"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -282,14 +287,18 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'Panel3
+        'Temporizador
         '
-        Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Controls.Add(Me.Label6)
-        Me.Panel3.Location = New System.Drawing.Point(111, 61)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(175, 180)
-        Me.Panel3.TabIndex = 4
+        Me.Temporizador.Controls.Add(Me.Button4)
+        Me.Temporizador.Controls.Add(Me.Button3)
+        Me.Temporizador.Controls.Add(Me.Button2)
+        Me.Temporizador.Controls.Add(Me.Button5)
+        Me.Temporizador.Controls.Add(Me.Label5)
+        Me.Temporizador.Controls.Add(Me.Label6)
+        Me.Temporizador.Location = New System.Drawing.Point(111, 61)
+        Me.Temporizador.Name = "Temporizador"
+        Me.Temporizador.Size = New System.Drawing.Size(175, 180)
+        Me.Temporizador.TabIndex = 4
         '
         'Label5
         '
@@ -304,20 +313,59 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(24, 24)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(126, 22)
+        Me.Label6.Size = New System.Drawing.Size(118, 20)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Temporizador"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(26, 134)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(53, 28)
+        Me.Button5.TabIndex = 5
+        Me.Button5.Text = "Start"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(85, 135)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(53, 28)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Reset"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(26, 104)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(53, 28)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "+1 min"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(85, 104)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(53, 28)
+        Me.Button4.TabIndex = 7
+        Me.Button4.Text = "+5 min"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Timer4
+        '
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(356, 444)
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Temporizador)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -341,8 +389,8 @@ Partial Class Form1
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Configuracion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
+        Me.Temporizador.ResumeLayout(False)
+        Me.Temporizador.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -371,7 +419,12 @@ Partial Class Form1
     Friend WithEvents Timer3 As Timer
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Temporizador As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Timer4 As Timer
 End Class
